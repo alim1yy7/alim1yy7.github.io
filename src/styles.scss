@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+//Imports: PrimeIcons for Social-Buttons
+
+@import "primeicons/primeicons.css";
+@import "swiper/scss";
+@import "swiper/scss/keyboard";
+@import "swiper/scss/pagination";
+@import "swiper/scss/navigation";
+@import "swiper/scss/scrollbar";
+
+:root {
+  --primary: #32454e;
+  --secondary: #878f94;
+  --accent: #f8b540;
+  --important: #e8404a;
+  --primary-box-shadow: 8px -8px 10px #2d4045;
+}
+
+.swiper {
+  --swiper-theme-color: #f8b540;
+
+  --swiper-navigation-size: 44px;
+  --swiper-navigation-color: var(--swiper-theme-color);
+
+  --swiper-pagination-color: var(--swiper-theme-color);
+  --swiper-pagination-bullet-horizontal-gap: 7px;
+  --swiper-pagination-bullet-vertical-gap: 6px;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-width: 8px;
+  --swiper-pagination-bullet-height: 8px;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-inactive-color: black;
+  --swiper-pagination-bullet-inactive-opacity: 0.2;
+
+  --swiper-preloader-color: var(--swiper-theme-color);
+  --swiper-virtual-size: 80px;
+}
+//HTML: No Frame around the content
+body {
+  margin: 0;
+  padding: 0;
+  overflow: overlay;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// font-family: 'Lilita One', cursive;
+// font-family: 'Varela Round', sans-serif;

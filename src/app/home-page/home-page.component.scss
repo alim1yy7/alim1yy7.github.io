@@ -1,0 +1,22 @@
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--primary);
+}
+.name-wrapper {
+  margin-top: calc(8vh + 2.5rem);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.name {
+  font-family: "Lobster", sans-serif;
+  color: var(--accent);
+  font-size: 2.5rem;
+  margin: 0;
+}
+.margin {
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}

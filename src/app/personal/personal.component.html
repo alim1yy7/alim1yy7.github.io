@@ -1,0 +1,19 @@
+<div class="page-wrapper">
+  <div class="card-container">
+    <div class="card" #card>
+      <div class="title-wrapper" (click)="toggleCard()" #titleWrapper>
+        <p class="title">Über</p>
+        <p class="title mich">Mich</p>
+      </div>
+
+      <div class="portrait-container" #portraitContainer>
+        <img
+          src="assets/pictures/portrait_noah.jpeg"
+          class="portrait"
+          #portrait
+        />
+      </div>
+      <div class="expanded-card" *ngIf="expandCard">Test ABC 1234</div>
+    </div>
+  </div>
+</div>

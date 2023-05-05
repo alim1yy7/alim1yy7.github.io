@@ -1,0 +1,15 @@
+.socials-container {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.social {
+  color: #32454e;
+  font-size: 28px;
+  margin: 0.25rem;
+  cursor: pointer;
+  transition: color 300ms ease-in-out;
+}
+.social:hover {
+  color: rgb(247, 244, 244);
+}
