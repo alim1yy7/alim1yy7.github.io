@@ -9,12 +9,12 @@ export class SocialsComponent {
   socialAccounts = [
     {
       name: 'instagram',
-      url: 'https://www.instagram.com',
+      url: 'https://www.instagram.com/chrisl18_03/',
     },
 
     {
       name: 'github',
-      url: 'https://www.github.com',
+      url: 'https://github.com/alim1yy7/',
     },
   ];
   openInNewTab(url: string) {
