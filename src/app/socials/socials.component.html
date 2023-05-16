@@ -1,3 +1,7 @@
 <div class="socials-container">
-  <i *ngFor="let socials of socialAccounts" class="social pi pi-{{socials.name}}" (click)="openInNewTab(socials.url)"></i>
+  <i
+    *ngFor="let socials of socialAccounts"
+    class="social pi pi-{{ socials.name }}"
+    (click)="openInNewTab(socials.url)"
+  ></i>
 </div>
