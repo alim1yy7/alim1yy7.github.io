@@ -9,7 +9,7 @@
       display: flex;
       background-color: #436067;
       width: 80vw;
-      min-height: 10vh;
+      min-height: 12vh;
       align-items: center;
     }
     .card.expanded {
@@ -22,8 +22,8 @@
 
       .portrait {
         object-fit: cover;
-        width: 50px;
-        height: 50px;
+        width: 65px;
+        height: 65px;
         border-radius: 50%;
       }
     }
@@ -32,7 +32,7 @@
       .title {
         font-family: "muli", sans-serif;
         font-style: italic;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         color: var(--accent);
         text-decoration-line: underline;
         text-decoration-thickness: 2px;
