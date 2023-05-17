@@ -1,21 +1,19 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 
+import { slideInOutAnimation } from '../shared/animations/slide-in-out.animation';
+
 @Component({
   selector: 'app-personal',
   templateUrl: './personal.component.html',
   styleUrls: ['./personal.component.scss'],
+  animations: [slideInOutAnimation],
 })
 export class PersonalComponent {
   expandCard = false;
-  @ViewChild('titleWrapper') titleWrapperElement!: ElementRef;
-  @ViewChild('portraitContainer') portraitContainerElement!: ElementRef;
-  @ViewChild('portrait') portraitElement!: ElementRef;
+
   @ViewChild('card') cardElement!: ElementRef;
   toggleCard() {
     this.expandCard = !this.expandCard;
-    this.titleWrapperElement.nativeElement.classList.toggle('expanded');
-    this.portraitContainerElement.nativeElement.classList.toggle('expanded');
-    this.portraitElement.nativeElement.classList.toggle('expanded');
     this.cardElement.nativeElement.classList.toggle('expanded');
   }
 
