@@ -12,9 +12,13 @@ export class PersonalComponent {
   expandCard = false;
 
   @ViewChild('card') cardElement!: ElementRef;
+  @ViewChild('titleWrapper') titleWrapperElement!: ElementRef;
+  @ViewChild('portrait') portraitElement!: ElementRef;
   toggleCard() {
     this.expandCard = !this.expandCard;
     this.cardElement.nativeElement.classList.toggle('expanded');
+    this.portraitElement.nativeElement.classList.toggle('expanded');
+    this.titleWrapperElement.nativeElement.classList.toggle('expanded');
   }
 
   // @ViewChild('fadeInElement') fadeInElement!: ElementRef;
