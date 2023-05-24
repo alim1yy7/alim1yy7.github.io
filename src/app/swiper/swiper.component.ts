@@ -44,18 +44,18 @@ export class SwiperComponent {
 
   slides = [
     {
-      image: '../../../assets/pictures/talsperre.jpg',
+      image: '../../../assets/pictures/webp//talsperre.jpg.webp',
     },
 
     {
-      image: '../../../assets/pictures/elbphilharmonie.jpg',
+      image: '../../../assets/pictures/webp/elbphilharmonie.jpg.webp',
       text: '',
     },
     {
-      image: '../../../assets/pictures/voegel_koeln.jpg',
+      image: '../../../assets/pictures/webp/voegel_koeln.jpg.webp',
     },
     {
-      image: '../../../assets/pictures/taube_koeln.jpg',
+      image: '../../../assets/pictures/webp/taube_koeln.jpg.webp',
     },
   ];
 }
