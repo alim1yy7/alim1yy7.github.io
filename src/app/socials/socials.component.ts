@@ -1,3 +1,5 @@
+import { ClipboardService } from 'ngx-clipboard';
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,6 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./socials.component.scss'],
 })
 export class SocialsComponent {
+  constructor(private clipboardService: ClipboardService) {}
+
+  showCopyIcon = false;
   socialAccounts = [
     {
       name: 'instagram',
@@ -19,5 +24,15 @@ export class SocialsComponent {
   ];
   openInNewTab(url: string) {
     window.open(url, '_blank')?.focus();
+  }
+  timeCopyIcon() {
+    this.copyMailToClipBoard();
+    this.showCopyIcon = true;
+    setTimeout(() => {
+      this.showCopyIcon = false;
+    }, 370);
+  }
+  copyMailToClipBoard() {
+    this.clipboardService.copy('christian.p.ludwig@gmail.com');
   }
 }

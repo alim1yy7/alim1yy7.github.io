@@ -2,14 +2,19 @@
   text-align: center;
   display: flex;
   flex-direction: row;
-}
-.social {
-  color: #32454e;
-  font-size: 28px;
-  margin: 0.25rem;
-  cursor: pointer;
-  transition: color 300ms ease-in-out;
-}
-.social:hover {
-  color: rgb(247, 244, 244);
+
+  .icon {
+    width: 30px;
+    margin: 5px;
+  }
+
+  .copy-icon {
+    position: relative;
+    font-size: 30px;
+    margin: 5px;
+    color: var(--primary);
+    text-decoration: bol;
+  }
+  .mail-icon {
+  }
 }

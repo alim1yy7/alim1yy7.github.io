@@ -1,11 +1,4 @@
-import SwiperCore, {
-  Autoplay,
-  Keyboard,
-  Navigation,
-  Pagination,
-  Scrollbar,
-  Swiper,
-} from 'swiper';
+import SwiperCore, { Autoplay, Keyboard, Navigation, Pagination, Scrollbar, Swiper } from 'swiper';
 
 import { Component } from '@angular/core';
 
