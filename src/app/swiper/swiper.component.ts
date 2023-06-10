@@ -17,10 +17,7 @@ export class SwiperComponent {
         type: 'bullets',
         clickable: true,
       },
-      // navigation: {
-      //   nextEl: '.swiper-button-next',
-      //   prevEl: '.swiper-button-prev',
-      // },
+
       keyboard: {
         enabled: true,
         onlyInViewport: true,
@@ -30,25 +27,27 @@ export class SwiperComponent {
         delay: 3000,
         disableOnInteraction: false,
       },
+      lazy: {
+        enabled: true,
+      },
       speed: 1000,
-      navigation: true,
     });
   }
 
   slides = [
     {
-      image: '../../../assets/pictures/webp//talsperre.jpg.webp',
+      image: 'assets/pictures/webp//talsperre.jpg.webp',
     },
 
     {
-      image: '../../../assets/pictures/webp/elbphilharmonie.jpg.webp',
+      image: 'assets/pictures/webp/elbphilharmonie.jpg.webp',
       text: '',
     },
     {
-      image: '../../../assets/pictures/webp/voegel_koeln.jpg.webp',
+      image: 'assets/pictures/webp/voegel_koeln.jpg.webp',
     },
     {
-      image: '../../../assets/pictures/webp/taube_koeln.jpg.webp',
+      image: 'assets/pictures/webp/taube_koeln.jpg.webp',
     },
   ];
 }

@@ -6,27 +6,9 @@
       .swiper-slide-content {
         border-radius: 10px;
         box-shadow: var(--primary-box-shadow);
-
         height: 60dvh;
         width: 80vw;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: 70%;
-
-        .swiper-slide-main-content {
-          .title,
-          .text {
-            text-align: center;
-          }
-          .title {
-            font-size: 4rem;
-            margin-bottom: 0;
-          }
-          .text {
-            font-size: 1rem;
-            margin-top: 0;
-          }
-        }
+        object-fit: cover;
       }
     }
   }

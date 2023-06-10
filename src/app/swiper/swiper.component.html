@@ -5,12 +5,13 @@
     <div class="swiper-slide" *ngFor="let slide of slides">
       <div
         title="eine Galerie, die beispielhaft einige Fotografien von mir enthält"
-        class="swiper-slide-content"
-        [ngStyle]="{ 'background-image': 'url(' + slide.image + ')' }"
       >
-        <div class="swiper-slide-main-content" id="swiper-slide-main-content">
-          <p class="text">{{ slide.text }}</p>
-        </div>
+        <img
+          loading="lazy"
+          class="swiper-slide-content"
+          data-src="{{ slide.image }}"
+          alt=""
+        />
       </div>
     </div>
   </div>
